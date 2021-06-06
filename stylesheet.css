@@ -1,0 +1,82 @@
+@media only screen and (min-width: 300px){
+    .nav-button-text{
+        font-size: 3.5vw;
+        text-align: center;
+        
+        
+    }
+    .nav-button{
+        margin-right: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: white;
+    }
+}
+
+@media only screen and (min-width: 660px){
+    .nav-button-text{
+        font-size: 100%;
+        text-align: center;
+        
+        
+    }
+    .nav-button{
+        margin-right: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: white;
+    }
+    
+    
+}
+
+@media only screen and (max-width: 660px){
+    #logo-text-div{
+        display: none;
+    }
+}
+
+#logo-text-div{
+    width:33vw;
+    color: white;
+    float: left;
+    padding-left: 10px;
+    
+}
+
+.active{
+    border-bottom: solid thick slateblue;
+}
+
+#nav-bar{
+    height: 50px;
+    background-color: black;
+    padding: 5px 0 5px 5px;
+}
+
+#logo-img{
+    object-fit: contain;
+    max-height: 50px;
+    float: left;
+    
+}
+
+#nav-buttons-div{
+    float: right;
+    
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+
+.nav-button:hover{
+    border-bottom: solid thick white;
+}
+
