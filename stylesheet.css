@@ -1,50 +1,136 @@
-@media only screen and (min-width: 300px){
+@media only screen and (max-width: 210px){
+    #logo-text-div{
+        display: none !important;
+        position: absolute;
+        visibility: hidden;
+    }
+    
+}
+
+@media only screen and (max-width: 354px){
+    #nav-buttons-div{
+       
+        position: absolute;
+        overflow: hidden;
+        height: 0 !important;
+        text-align: center;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        flex-direction: column !important;
+        width: 100vw;
+        left: 0px;
+        top: 60px;
+        transition: min-height 0.3s;
+    }
+    
+    
+
+    #logo-text-div{
+        display: initial !important;
+        font-size: 80% !important;
+        width: 45vw !important;
+        
+        height: 50px !important;
+        text-align: center;
+        display: flex !important;
+        align-content: center !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .nav-button{
+        width: 100% !important;
+        height: 8vh !important;
+        
+        margin-top: 3px !important;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-button-text{
+        background-color: black;
+    }
+}
+
+@media only screen and (min-width: 356px){
     .nav-button-text{
         font-size: 3.5vw;
         text-align: center;
         
         
     }
+
+    #burger{
+        display: none !important;
+    }
+
     .nav-button{
-        margin-right: 6px;
+        margin-right: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
-        text-decoration: none;
-        color: white;
     }
+
+    #nav-buttons-div{
+        padding-right: 4vw;
+    }
+}
+
+@media only screen and (min-width: 498px){
+    .nav-button-text{
+        font-size: 100%;
+    }
+
+    #nav-buttons-div{
+        
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        
+    }
+   
+    
+    
 }
 
 @media only screen and (min-width: 660px){
-    .nav-button-text{
-        font-size: 100%;
-        text-align: center;
-        
-        
-    }
+
     .nav-button{
-        margin-right: 15px;
+        padding: 0 1vw 0 1vw;
         display: flex;
         justify-content: center;
         align-items: center;
         text-decoration: none;
         color: white;
+        font-size: 90%;
     }
     
-    
+    #nav-buttons-div{
+        
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        padding-right: 2vw;
+    }
 }
 
-@media only screen and (max-width: 660px){
+@media only screen and (max-width: 658px){
     #logo-text-div{
         display: none;
     }
+
 }
 
 #logo-text-div{
-    width:33vw;
+    width:30vw;
     color: white;
     float: left;
     padding-left: 10px;
+    margin-left: 3vw;
     
 }
 
@@ -55,7 +141,7 @@
 #nav-bar{
     height: 50px;
     background-color: black;
-    padding: 5px 0 5px 5px;
+    padding: 5px 10px 5px 2vw;
 }
 
 #logo-img{
@@ -67,16 +153,56 @@
 
 #nav-buttons-div{
     float: right;
-    
+    min-height: 0vh;
     height: 100%;
     text-align: center;
     display: flex;
     flex-direction: row;
-    
+    background-color: black;
     
 }
+
+
 
 .nav-button:hover{
     border-bottom: solid thick white;
 }
 
+.nav-button{
+    text-decoration: none;
+    color: white;
+}
+
+#nav-bar{
+    position: fixed;
+    width: 100vw;
+}
+
+#burger{
+    
+    height: 100%;
+    
+    float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-right: 10vw;
+}
+
+.bar-div {
+    width: 30px;
+    height: 5px;
+    background-color: white;
+    margin: 5px 0;
+  }
+
+  .menu-toggle{
+    min-height: 32vh !important;
+    
+}
+
+.nav-button-menu{
+    background-color: black !important;
+}
